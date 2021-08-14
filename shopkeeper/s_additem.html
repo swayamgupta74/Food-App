@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="s_dashboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            place-items: center;
+        }
+        .container{
+            margin-top: 20px;
+            background:#fff;
+            padding: 10px 30px 30px 30px;
+            border-radius: 10px;    
+        }
+        .container form .title{
+            font-size: 30px;
+            font-weight:600 ;
+            margin:20px 0 10px 0;
+        }
+        .container form .input-box{
+            width: 100%;
+            height: 45px;
+            margin-top:25px;
+            position: relative;
+        }
+        .container form .input-box input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            font-size: 16px;
+        }
+        .button{
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+        .container form .underline{
+            position:absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background:#ccc;
+            left:0;
+            bottom: 0;
+        }
+        nav{
+        padding-left: 400px;
+      }
+    nav a{ 
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 26px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        
+    }
+    .title{
+        color: black;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+          &ensp;
+          <button class="a"><a href="s_dashboard.php" >Home </a></button>
+          <button class="a"><a href="s_orders.php">Orders</a></button> 
+          <button class="a"><a href="s_listitem.php">ITEMS</a></button>
+          <button class="a"><a href="s_additem.html">Add New Items</a></button>
+          <button class="a"><a href="logout.php" >Logout</a></button> 
+        </nav>
+    </header>
+
+    <div class="container" >
+        <form action="s_additem.php" method="POST">
+            <div class=title>ADD ITEM</div>
+            <div class="input-box">
+              <input type="text" name="item_id" placeholder="Create Item id" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="text" name="item_name" placeholder="Enter Item Name" required>
+                  <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="number" name="qty"placeholder="Enter Quantity" required>
+                  <div class="underline"></div>
+            </div>
+            <div class="input-box">
+              <input type="text" name="origin" placeholder="Origin" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+              <input type="text" name="company" placeholder="Company Name" required>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="input-box">
+              <input type="number" name="price"placeholder="Enter Price for one piece" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="submit" value="ADD">
+            </div>
+        </form>    
+    </div>
+</body>
+</html>
