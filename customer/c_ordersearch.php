@@ -32,7 +32,7 @@
         <nav>
           <a href="c_dashboard.php" >Home </a>
           <a href="c_orders.php">Orders</a>
-          <a href="logout.php" >Logout</a>
+          <a href="C:/xampp/htdocs/final/logout.php" >Logout</a>
         </nav>
     </header>   
 <div>     
