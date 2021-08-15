@@ -37,7 +37,7 @@
     </header>   
 <div>     
 <?php
-require_once "config.php";
+require_once "C:/xampp/htdocs/final/config.php";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $str=$_POST["search"];
     $sql='select item_id,s_id,qty from available where type=?';
