@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "config.php";
+require_once "C:/xampp/htdocs/final/config.php";
 $item_id = $s_id =$qty="";
 $c_id=$_SESSION["username"];
 if($_SERVER["REQUEST_METHOD"] == "POST"){
