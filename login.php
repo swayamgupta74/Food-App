@@ -31,8 +31,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     echo "login successfully";
                     $_SESSION["username"]=$username;
                     $_SESSION["logged_in"]=true;
-                    if($type=="Customer") header("location:c_dashboard.php");
-                    else header("location:s_dashboard.php");
+                    if($type=="Customer") header("location:customer/c_dashboard.php");
+                    else header("location:shopkeeper/s_dashboard.php");
                 }
                 else{
                     header("location:login.html");
