@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "config.php";
+require_once "C:/xampp/htdocs/final/config.php";
 $item_id = $s_id ="";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $item_id=$_POST["item_id"];
