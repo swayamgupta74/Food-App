@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="s_dashboard.css">
-    <link rel="stylesheet" href="c_orders.css">
+    <link rel="stylesheet" href="C:/xampp/htdocs/final/customer/c_orders.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
     <div id ="main" class="form" >
         <h2 style="color: white;">Orders placed</h2>
         <?php 
-        require_once "config.php";
+        require_once "C:/xampp/htdocs/final/config.php";
         $sql="SELECT o.o_id ,i.item_name  ,i.price,i.company_name,i.origin,o.qty,c.name,c.c_id,i.item_id FROM orderplaced as o, item as i , customer as c WHERE o.s_id =?  and o.item_id=i.item_id and o.c_id=c.c_id";
         if($stmt = mysqli_prepare($link, $sql)){  // preparing query
             mysqli_stmt_bind_param($stmt, "s", $_SESSION["username"]);
