@@ -34,7 +34,7 @@
           <button class="a"><a href="s_orders.php">Orders</a></button> 
           <button class="a"><a href="s_listitem.php">ITEMS</a></button>
           <button class="a"><a href="s_additem.html">Add New Items</a></button>
-          <button class="a"><a href="logout.php" >Logout</a></button> 
+          <button class="a"><a href="C:/xampp/htdocs/final/logout.php" >Logout</a></button> 
         </nav>
     </header>
 
