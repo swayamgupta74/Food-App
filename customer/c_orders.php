@@ -48,7 +48,7 @@
     <div class="form">
         <h2>Orders placed</h2>
         <?php 
-        require_once "config.php";
+        require_once "C:/xampp/htdocs/final/config.php";
         $sql="SELECT o.o_id ,i.item_name  ,i.price,i.company_name,i.origin,o.qty,s.name,s.s_id,i.item_id FROM orderplaced as o, item as i , shop as s WHERE o.c_id =?  and o.item_id=i.item_id and o.s_id=s.s_id";
         if($stmt = mysqli_prepare($link, $sql)){  // preparing query
             mysqli_stmt_bind_param($stmt, "s", $_SESSION["username"]);
